@@ -60,6 +60,69 @@ public class MessageService  {
 		return toJSON(conectados);
 	}
 	
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	@Path("/desconectados")
+	public String todosDesconectados(){
+		return toJSON(desconectados);
+	}
+	
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	@Path("/baneados")
+	public String todosBaneados(){
+		return toJSON(baneados);
+	}
+	
+	
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Path("/conectados")
+	public void agregarConectado(String alguien){
+		try {
+			JSONObject objeto=new JSONObject(alguien);
+			conectados.addLast(objeto.getString("ip"), objeto.getString("nombre"));
+			escrituraGeneral("conectados",conectados,"/home/alfredo/Inicio/Documentos/Eclipse_Keppler/Proyecto3/WebContent/WEB-INF/Conectados.xml");
+			
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Path("/desconectados")
+	public void agregarDesconectado(String alguien){
+		try {
+			JSONObject objeto=new JSONObject(alguien);
+			desconectados.addLast(objeto.getString("ip"), objeto.getString("nombre"));
+			escrituraGeneral("desconectados",desconectados,"/home/alfredo/Inicio/Documentos/Eclipse_Keppler/Proyecto3/WebContent/WEB-INF/Desconectados.xml");
+			
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
+	@POST
+	@Consumes(MediaType.APPLICATION_JSON)
+	@Path("/baneados")
+	public void agregarBaneado(String alguien){
+		try {
+			JSONObject objeto=new JSONObject(alguien);
+			baneados.addLast(objeto.getString("ip"), objeto.getString("nombre"));
+			escrituraGeneral("baneados",baneados,"/home/alfredo/Inicio/Documentos/Eclipse_Keppler/Proyecto3/WebContent/WEB-INF/Baneados.xml");
+			
+		} catch (JSONException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+	}
+	
 	
 	public String toJSON(ListaDoble<String,String> lista){
 		JSONObject objeto=new JSONObject();

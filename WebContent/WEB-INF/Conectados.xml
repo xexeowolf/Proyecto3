@@ -1,7 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <conectados>
 	<usuario>
 		<ip>192.168.1.62</ip>
 		<nombre>Alfredo</nombre>
+	</usuario>
+	<usuario>
+		<ip>192.168.43.116</ip>
+		<nombre>Estrella</nombre>
 	</usuario>
 </conectados>
