@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<todo>
+	<persona>
+		<id>0</id>
+		<cantidad>2</cantidad>
+		<mensaje1>Hola que hace</mensaje1>
+		<mensaje2>Ayer llovio mucho</mensaje2>
+	</persona>
+	<persona>
+		<id>1</id>
+		<cantidad>2</cantidad>
+		<mensaje1>Hola marielos caramelos</mensaje1>
+		<mensaje2>Huracan paso a tormenta</mensaje2>
+	</persona>
+</todo>

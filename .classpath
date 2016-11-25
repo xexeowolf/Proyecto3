@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/java-8-openjdk-amd64">
+		<attributes>
+			<attribute name="owner.project.facets" value="java"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.server.core.container/com.ibm.ws.st.core.runtimeClasspathProvider/WebSphere Application Server V8.5 Liberty Profile">
+		<attributes>
+			<attribute name="owner.project.facets" value="jst.web"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-bgfx.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-bgfx-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-bgfx-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-bgfx-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-egl.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-egl-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-egl-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-glfw.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-glfw-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-glfw-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-glfw-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-jawt.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-jawt-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-jawt-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-jemalloc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-jemalloc-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-jemalloc-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-jemalloc-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-lmdb.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-lmdb-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-lmdb-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-lmdb-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-nanovg.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-nanovg-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-nanovg-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-nanovg-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-nfd.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-nfd-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-nfd-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-nfd-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-nuklear.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-nuklear-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-nuklear-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-nuklear-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-openal.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-openal-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-openal-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-openal-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-opencl.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-opencl-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-opencl-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-opengl.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-opengles.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-opengles-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-opengles-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-opengl-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-opengl-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-par.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-par-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-par-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-par-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-sse.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-sse-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-sse-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-sse-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-stb.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-stb-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-stb-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-stb-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-tinyfd.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-tinyfd-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-tinyfd-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-tinyfd-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-vulkan.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-vulkan-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-vulkan-sources.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-xxhash.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-xxhash-javadoc.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-xxhash-natives-linux.jar"/>
+	<classpathentry kind="lib" path="/home/alfredo/Inicio/Documentos/Descargas/lwjgl-release-3.1.0-custom/lwjgl-xxhash-sources.jar"/>
+	<classpathentry kind="output" path="build/classes"/>
+</classpath>
