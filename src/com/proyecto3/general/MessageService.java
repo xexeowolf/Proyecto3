@@ -28,6 +28,9 @@ import org.w3c.dom.NodeList;
 public class MessageService  {
 	
 	public ListaDoble<String,ListaDoble<String,String>> mensajes=lectura();
+	public ListaDoble<String,String> conectados=lecturaGeneral("/home/alfredo/Inicio/Documentos/Eclipse_Keppler/Proyecto3/WebContent/WEB-INF/Conectados.xml");
+	public ListaDoble<String,String> desconectados=lecturaGeneral("/home/alfredo/Inicio/Documentos/Eclipse_Keppler/Proyecto3/WebContent/WEB-INF/Desconectados.xml");
+	public ListaDoble<String,String> baneados=lecturaGeneral("/home/alfredo/Inicio/Documentos/Eclipse_Keppler/Proyecto3/WebContent/WEB-INF/Baneados.xml");
 	
 	public MessageService(){
 		
@@ -50,6 +53,13 @@ public class MessageService  {
 		return toJSON(temp.valor);
 	}
 	
+	@GET
+	@Produces(MediaType.TEXT_PLAIN)
+	@Path("/conectados")
+	public String todosConectados(){
+		return toJSON(conectados);
+	}
+	
 	
 	public String toJSON(ListaDoble<String,String> lista){
 		JSONObject objeto=new JSONObject();
@@ -64,6 +74,81 @@ public class MessageService  {
 		}
 		return objeto.toString();
 	}
+	
+	public ListaDoble<String,String> lecturaGeneral(String direccion){
+		ListaDoble<String,String> contenido=new ListaDoble<String,String>();
+		
+		try {
+			DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
+			DocumentBuilder db = dbf.newDocumentBuilder();
+			File file=new File(direccion);
+			if (file.exists()){
+				Document doc = db.parse(file);
+				Element docEle = doc.getDocumentElement();
+					NodeList informacion = docEle.getElementsByTagName("usuario");
+					if (informacion != null && informacion.getLength() > 0) {
+						for (int i = 0; i < informacion.getLength(); i++) {
+							Node nodo = informacion.item(i);
+							if (nodo.getNodeType() == Node.ELEMENT_NODE) {
+								
+								Element e = (Element) nodo;
+								
+								NodeList elementos=e.getElementsByTagName("ip");
+								String ip=elementos.item(0).getChildNodes().item(0).getNodeValue();
+								elementos = e.getElementsByTagName("nombre");	
+								contenido.addLast(ip,elementos.item(0).getChildNodes().item(0).getNodeValue());
+						}
+					}
+				}
+			}else{System.exit(1);}		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+			return contenido;
+
+		
+	}
+	
+	public void escrituraGeneral(String raiz, ListaDoble<String,String> lista,String direccion){
+		try{
+			DocumentBuilderFactory docFactory = DocumentBuilderFactory.newInstance();
+			DocumentBuilder docBuilder = docFactory.newDocumentBuilder();
+
+			// root elements
+			Document doc = docBuilder.newDocument();
+			Element rootElement = doc.createElement(raiz);
+			doc.appendChild(rootElement);
+			
+			NodoDoble<String,String> punt=lista.head;
+			while(punt!=null){
+				Element oro = doc.createElement("usuario");
+				rootElement.appendChild(oro);
+					
+				Element Generico=doc.createElement("ip");
+				Generico.appendChild(doc.createTextNode(punt.llave));
+				oro.appendChild(Generico);
+				
+				Generico=doc.createElement("nombre");
+				Generico.appendChild(doc.createTextNode(punt.valor));
+				oro.appendChild(Generico);
+				
+				punt=punt.next;
+			}
+				
+			TransformerFactory transformerFactory = TransformerFactory.newInstance();
+			Transformer transformer = transformerFactory.newTransformer();
+			DOMSource source = new DOMSource(doc);
+			StreamResult resulto = new StreamResult(new File(direccion));
+			transformer.transform(source, resulto);
+			
+		}
+		catch(Exception e){
+			e.printStackTrace();
+		}		
+	}
+	
+	
+	
 	
 	
 	public void escritura(ListaDoble<String,ListaDoble<String,String>> lista){
