@@ -197,7 +197,7 @@ public class Grafo<Llave extends Comparable<Llave>> {
 		grafo.conectar("d", "t", 6);
 		grafo.conectar("c", "e", 10);
 		grafo.conectar("e", "t", 2);
-		//grafo.mostrar();
+		grafo.mostrar();
 		System.out.println(grafo.rutaDijkstra("s", "t"));
 	}
 	
